@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev Activity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>WebDev Activity</h1>
+
+    <form id="survey-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age" min="1" max="100" required>
+
+        <div class="course">
+            <p>Course:</p>
+            <label for="radio1">
+                <input type="radio" id="radio1" name="course" value="Information Technology">
+                Bachelor of Science in Information Technology
+            </label>
+            <label for="radio2">
+                <input type="radio" id="radio2" name="course" value="Secondary Education">
+                Bachelor of Secondary Education
+            </label>
+        </div>
+
+        <label for="gender">Gender:</label>
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <div class="hobbies">
+            <p>Hobbies:</p>
+            <label for="checkbox1">
+                <input type="checkbox" id="checkbox1" value="Gaming">
+                Gaming
+            </label>
+            <label for="checkbox2">
+                <input type="checkbox" id="checkbox2" value="Music">
+                Music
+            </label>
+            <label for="checkbox3">
+                <input type="checkbox" id="checkbox3" value="Sports">
+                Sports
+            </label>
+        </div>
+
+        <label for="bio">Bio:</label>
+        <textarea id="bio" placeholder="Enter your bio"></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
